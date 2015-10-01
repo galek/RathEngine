@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\PostProcess">
+      <UniqueIdentifier>{71cfc1ed-5d0e-4b10-bd1c-742403560f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PostProcess">
+      <UniqueIdentifier>{9d3ef5f3-4757-401b-be5e-20f7a1a82b9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Debug">
+      <UniqueIdentifier>{60fdc766-37e3-4e0a-bff3-379a700da502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{a8bd0c04-4b3a-4d57-9cb2-7ee4ac1ecf89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes">
+      <UniqueIdentifier>{f8aa3faa-783f-4bf1-ad2e-f9e684baa468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes">
+      <UniqueIdentifier>{4eeb5b64-9c4b-4f8e-99dd-138cef8d4853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{04a45a69-6a5b-4973-9b4a-ba33f6cf1a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{d75d27c3-2fdf-4ed7-97fc-9cdaa838855c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader">
+      <UniqueIdentifier>{12977f67-acc5-4b6f-8828-f57e861f3eee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\Skining">
+      <UniqueIdentifier>{e35d1f7d-f1ec-4a1e-9f5f-f75b39cbb275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\Sky">
+      <UniqueIdentifier>{cda27738-0798-4a31-bf49-d26441540b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\UI">
+      <UniqueIdentifier>{527d3625-65db-45a5-8b20-f0c6d30c61b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\PostProcessing">
+      <UniqueIdentifier>{2d7e8048-50d8-4d2e-8781-627f6cc95124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\PostProcessing\FXAA">
+      <UniqueIdentifier>{88546458-9160-410d-92a0-84b1731af843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\PostProcessing\Copy">
+      <UniqueIdentifier>{8cc36d6d-ff30-4aa4-997d-bceca3fccac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\PostProcessing\ToneMapping">
+      <UniqueIdentifier>{6c7d1913-5427-4f14-be8f-d9567f18baef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\PostProcessing\DOF">
+      <UniqueIdentifier>{7ff9aa84-1033-4a0a-9c83-71a5d5ba7db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\PostProcessing\Resolve Depth">
+      <UniqueIdentifier>{8d1ab892-65ab-4895-8b5d-ae6a30cdeffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\PostProcessing\Lightshafts">
+      <UniqueIdentifier>{5b6ef80f-e848-4f3b-9b6b-c923892871ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sky">
+      <UniqueIdentifier>{d78c778c-f6a7-4ae7-86ea-73d30e56298b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sky">
+      <UniqueIdentifier>{67ec76d5-a4d6-4ff3-b4e6-392a6a94e31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{0b40e084-19b3-46da-a09f-f580911e5d16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{b957a353-bb45-4491-85e8-b4959806e999}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FileIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GraphicTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ShaderCompilation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MurmurHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Technique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\AnimationController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PostProcess\BloomPostProcess.cpp">
+      <Filter>Source Files\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PostProcess\DepthOfFieldPostProcess.cpp">
+      <Filter>Source Files\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PostProcess\FXAAPostProcess.cpp">
+      <Filter>Source Files\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Debug\MemoryMonitor.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Debug\TimestampQueries.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Debug\DXErr.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Debug\PAssert.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Node.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UI\Font.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UI\UIElement.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UI\UIManager.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NodeController.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PostProcess\CMAAPostProcess.cpp">
+      <Filter>Source Files\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Sky.cpp">
+      <Filter>Source Files\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Clouds.cpp">
+      <Filter>Source Files\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\AssetLibrary.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\BackBuffer.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\BaseEngine.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\DeviceManager.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ShadowManager.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Window.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Engine_Impl.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\EngineState.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PhysicsManager.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\DynamicNode.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ControllerNode.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\BrowserManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ShaderCompilation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\MurmurHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Technique.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\PostProcess\BloomPostProcess.h">
+      <Filter>Header Files\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\PostProcess\DepthOfFieldPostProcess.h">
+      <Filter>Header Files\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\PostProcess\FXAAPostProcess.h">
+      <Filter>Header Files\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Debug\MemoryMonitor.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Debug\TimestampQueries.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Debug\DXErr.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Debug\Exceptions.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Debug\PAssert.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Node.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Camera.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\UI\Font.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\UI\UIElement.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\UI\UIManager.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\NodeController.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GraphicTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Typedefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Loadable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FileIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\AnimationController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\InterfacePointers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\PostProcess\CMAAPostProcess.h">
+      <Filter>Header Files\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Clouds.h">
+      <Filter>Header Files\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Sky.h">
+      <Filter>Header Files\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\AssetLibrary.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\BackBuffer.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BaseEngine.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EngineState.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Engine_Impl.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\DeviceManager.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ShadowManager.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\StepTimer.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Window.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\PhysicsManager.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DynamicNode.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ControllerNode.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BrowserManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Shader\shader_include.hlsli">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="..\..\Shader\Skinning.hlsli">
+      <Filter>Resource Files\Shader\Skining</Filter>
+    </None>
+    <None Include="..\..\Shader\TMshader_include.hlsli">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\Shader\Skinning_ds.hlsl">
+      <Filter>Resource Files\Shader\Skining</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Skinning_hs.hlsl">
+      <Filter>Resource Files\Shader\Skining</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Skinning_ps.hlsl">
+      <Filter>Resource Files\Shader\Skining</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Skinning_vs.hlsl">
+      <Filter>Resource Files\Shader\Skining</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Sky_ds.hlsl">
+      <Filter>Resource Files\Shader\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Sky_hs.hlsl">
+      <Filter>Resource Files\Shader\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Sky_ps.hlsl">
+      <Filter>Resource Files\Shader\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Sky_vs.hlsl">
+      <Filter>Resource Files\Shader\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\UI_ps.hlsl">
+      <Filter>Resource Files\Shader\UI</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\UI_vs.hlsl">
+      <Filter>Resource Files\Shader\UI</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\FXAA_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\FXAA</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\ScreenQuad_vs.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Copy</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\CopyBackBuffer_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Copy</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\ScreenTriangle_vs.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Copy</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\AdaptLuminance_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\BloomBlurH_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\BloomBlurV_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\Composite_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\LuminanceMap_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\Scale_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\Threshold_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Bloom_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\DownScale2x2Lum_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\DownScale3x3BrightPass_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\DownScale3x3_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\FinalPass_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\ToneMapping</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\CoCSpread_H_cs.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\DOF</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\CoCSpread_V_cs.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\DOF</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\DepthBlurGeneration_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\DOF</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\DOF_H_cs.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\DOF</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\DOF_V_cs.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\DOF</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\MSAA_Detect_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Resolve Depth</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\DepthReductionInitial_cs.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Resolve Depth</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\DepthReduction_cs.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Resolve Depth</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Resolve_Depth_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Resolve Depth</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\LightShafts_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Lightshafts</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\LightShafts_MS_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Lightshafts</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\PostProcessing\CopyLightTexture_ps.hlsl">
+      <Filter>Resource Files\Shader\PostProcessing\Lightshafts</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Clouds_ps.hlsl">
+      <Filter>Resource Files\Shader\Sky</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Shader\Clouds_vs.hlsl">
+      <Filter>Resource Files\Shader\Sky</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

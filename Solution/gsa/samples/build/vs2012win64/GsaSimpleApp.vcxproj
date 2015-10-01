@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+	<ProjectConfiguration Include="Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+	</ProjectConfiguration>
+	<ProjectConfiguration Include="Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+	</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ApplicationEnvironment>title</ApplicationEnvironment>
+		<!-- - - - -->
+		<PlatformToolset>v110</PlatformToolset>
+		<MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v110</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v110</PlatformToolset>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<OutDir>./../../GsaSimpleApp/bin/win64\</OutDir>
+		<IntDir>./x64/GsaSimpleApp/Debug\</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>GsaSimpleAppD.x64</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<CallingConvention>Cdecl</CallingConvention>
+			<CompileAs>CompileAsC</CompileAs>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/wd4201 /Oy- /Gm- /EHsc</AdditionalOptions>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>./../../../include;./../../../include/stdbool;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN64;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level4</WarningLevel>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/DEBUG /MACHINE:x64 /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>NvGsaD.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)GsaSimpleAppD.x64.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../lib/win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/GsaSimpleAppD.x64.exe.pdb</ProgramDatabaseFile>
+			<SubSystem>Console</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX64</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+		<PostBuildEvent>
+			<Command>(robocopy $(SolutionDir)..\..\..\bin\win64 $(TargetDir) *.dll *.dll.pdb) ^&amp; if %ERRORLEVEL% leq 1 exit 0</Command>
+		</PostBuildEvent>
+	</ItemDefinitionGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<OutDir>./../../GsaSimpleApp/bin/win64\</OutDir>
+		<IntDir>./x64/GsaSimpleApp/Release\</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>GsaSimpleApp.x64</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<CompileAs>CompileAsC</CompileAs>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/wd4201 /Oy- /Gm- /EHsc</AdditionalOptions>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>./../../../include;./../../../include/stdbool;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN64;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level4</WarningLevel>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/MACHINE:x64 /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>NvGsa.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)GsaSimpleApp.x64.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../lib/win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/GsaSimpleApp.x64.exe.pdb</ProgramDatabaseFile>
+			<SubSystem>Console</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX64</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+		<PostBuildEvent>
+			<Command>(robocopy $(SolutionDir)..\..\..\bin\win64 $(TargetDir) *.dll *.dll.pdb) ^&amp; if %ERRORLEVEL% leq 1 exit 0</Command>
+		</PostBuildEvent>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\GsaSimpleApp\GsaSimpleApp.c">
+		</ClCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

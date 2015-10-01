@@ -1,0 +1,769 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+    
+    <title>API Documentation &mdash; GFE Settings API 1.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
+    <link rel="stylesheet" href="_static/application.css" type="text/css" />
+    <link rel="stylesheet" href="_static/styleguide.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bootstrap.js"></script>
+    <script type="text/javascript" src="_static/jquery.cookie.js"></script>
+    <script type="text/javascript" src="_static/jquery.storageapi.js"></script>
+    <link rel="top" title="GFE Settings API 1.0.2 documentation" href="index.html" />
+    <link rel="up" title="GFE Settings API 1.0.2" href="product.html" />
+    <link rel="next" title="Release Notes" href="releasenotes.html" />
+    <link rel="prev" title="GFE Settings API 1.0.2" href="product.html" /> 
+  </head>
+  <body>
+<nav class="navbar navbar-inverse navbar-default">
+  <div class="row">
+      <div class="navbar-brand">
+             <img class="logo" src="_static/developerzone_gameworks_logo.png" alt="Logo"/>
+      </div>
+<div id="searchbox" style="display: none; float:right; padding-top:4px; padding-right:4px">
+    <form class="search form-inline" action="search.html" method="get">
+      <div class="form-group">
+      <input type="text" name="q" class="form-control" />
+      <input type="submit" value="Search" class="btn btn-primary" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  </div>
+</nav>
+<div class="masthead">
+    <div class="row">
+      <ul class="breadcrumb">
+        <li><a href="index.html">GFE Settings API 1.0.2 documentation</a></li>
+          <li><a href="product.html" accesskey="U">GFE Settings API 1.0.2</a></li> 
+      </ul>
+    </div>
+</div>
+<div class="row">
+  <div class="col-md-3 bs-sidenav" style="white-space: nowrap; overflow: auto;">
+<div class="bs-sidebar">
+  <div id="sidebar_toc">
+  <h4>Table Of Contents</h4>
+  <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="product.html">GFE Settings API 1.0.2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="product.html#highlights">Highlights</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="product.html#browse-documentation">Browse Documentation</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">API Documentation</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="releasenotes.html">Release Notes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="releasenotes.html#what-s-new">What&#8217;s New</a></li>
+<li class="toctree-l4"><a class="reference internal" href="releasenotes.html#fixes-and-enhancements">Fixes and Enhancements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="releasenotes.html#known-issues">Known Issues</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="product.html"
+                        title="previous chapter">GFE Settings API 1.0.2</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="releasenotes.html"
+                        title="next chapter">Release Notes</a></p>
+<div id="searchbox" style="display: none">
+  <h4>Quick search</h4>
+    <form class="search form-inline" action="search.html" method="get">
+      <div class="form-group">
+      <input type="text" name="q" class="form-control" />
+      <input type="submit" value="Search" class="btn btn-primary" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+  </div>
+    <div class="document col-md-8">
+          <div class="body">
+            
+  <div class="section" id="api-documentation">
+<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h1>
+<p><strong>GFE Settings API</strong> <strong>1.0.2</strong></p>
+<div class="line-block" id="project0struct_nv_gsa_application">
+<div class="line"><em>struct</em> <strong>NvGsaApplication</strong></div>
+<div class="line"><em>#include &lt;NvGsa.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Structure containing information about a registered application. </p>
+<p>The configuration file name and location will be as follows, with words in &lt;&gt; substituting the value of the specified field: &lt;configPath&gt;/GFXSettings.&lt;executable&gt;.xml </p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="project0struct_nv_gsa_application_19646ebebc3ee11a45e4fdfb398bad52c"></span>const wchar_t * <strong>displayName</strong></p>
+<blockquote>
+<div><p>Contains default application name. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_application_1a1e3f5e4403ad5a25e4f8018bf13dcd8"></span>const wchar_t * <strong>versionName</strong></p>
+<blockquote>
+<div><p>Contains application version information. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_application_16f26ee92e640ad150226f3902729bf80"></span>const wchar_t * <strong>installPath</strong></p>
+<blockquote>
+<div><p>Absolute path pointing to the directory where the game has been installed. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_application_13e1c6ee845712d8b204f820c0cfe6dc1"></span>const wchar_t * <strong>configPath</strong></p>
+<blockquote>
+<div><p>Absolute path pointing to the location where the settings file will be stored and read from. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_application_1b372631452aef72ae5381e6b9a714d17"></span>const wchar_t * <strong>executable</strong></p>
+<blockquote>
+<div><p>Executable name for this configuration. This allows to have multiple GFX config files. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_application_11b75ed6e15c23470d0e114c63dc452f4"></span>const wchar_t * <strong>execCmd</strong></p>
+<blockquote>
+<div><p>Direct command line used to launch the game. This should be compatible with Steam, Origin, Uplay, etc. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="line-block" id="project0struct_nv_gsa_enum_range">
+<div class="line"><em>struct</em> <strong>NvGsaEnumRange</strong></div>
+<div class="line"><em>#include &lt;NvGsa.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Structure containing the valid values for an enum option. </p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="project0struct_nv_gsa_enum_range_1e3929c353729211790e9a02296948ec7"></span>const wchar_t ** <strong>enums</strong></p>
+<blockquote>
+<div><p>Array of strings that will contain all the enum names. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_enum_range_1eb8a881f79180f04bc981dd215ebe74f"></span>uint32_t <strong>numEnums</strong></p>
+<blockquote>
+<div><p>Number of strings in the array. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="line-block" id="project0struct_nv_gsa_named_option">
+<div class="line"><em>struct</em> <strong>NvGsaNamedOption</strong></div>
+<div class="line"><em>#include &lt;NvGsa.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Structure containing value and range info for a named option. </p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="project0struct_nv_gsa_named_option_139d7ce1a963f8045eb2fd56475f86e8b"></span>const wchar_t * <strong>name</strong></p>
+<blockquote>
+<div><p>Name of the option. Universal, non-localized name. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_named_option_1824cce2885d9237f4bb44851933596f1"></span><a class="reference internal" href="#project0struct_nv_gsa_variant"><em>NvGsaVariant</em></a> <strong>value</strong></p>
+<blockquote>
+<div><p>Dynamically typed value of the option. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_named_option_19fa91be966ecee3887bd9d03d3b7792c"></span><a class="reference internal" href="#project0struct_nv_gsa_numeric_range"><em>NvGsaNumericRange</em></a> <strong>numRange</strong></p>
+<blockquote>
+<div><p>Valid range for numeric types (float and int). </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_named_option_1da417179488002f319b67e6a7316811f"></span><a class="reference internal" href="#project0struct_nv_gsa_enum_range"><em>NvGsaEnumRange</em></a> <strong>enumRange</strong></p>
+<blockquote>
+<div><p>All possible values that an enum option can get; treated as strings. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="line-block" id="project0struct_nv_gsa_numeric_range">
+<div class="line"><em>struct</em> <strong>NvGsaNumericRange</strong></div>
+<div class="line"><em>#include &lt;NvGsa.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Structure containing the valid range of numeric (int or float) value. </p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="project0struct_nv_gsa_numeric_range_11f76f3bbdae6ce9ae21c8b6dc07a9a4c"></span><a class="reference internal" href="#project0union_nv_gsa_value"><em>NvGsaValue</em></a> <strong>minValue</strong></p>
+<blockquote>
+<div><p>Minimum value allowed. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_numeric_range_1da82d94dc3c6bb5fd30e3917f3fc930d"></span><a class="reference internal" href="#project0union_nv_gsa_value"><em>NvGsaValue</em></a> <strong>maxValue</strong></p>
+<blockquote>
+<div><p>Maximum value allowed. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_numeric_range_175b0267047e66888d5ce47be9d989d34"></span>int32_t <strong>numSteps</strong></p>
+<blockquote>
+<div><p>determines the allowable values for an option given min/max numSteps == -1 range is [-inf, inf] numSteps == 0 range is continuous within [MinValue, MaxValue] numSteps &gt; 0 assumes NumSteps uniform increments between min/max eg, if min = 0, max = 8, and NumSteps = 4, then our option can accept any value in the set {0, 2, 4, 6, 8} </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="line-block" id="project0struct_nv_gsa_resolution">
+<div class="line"><em>struct</em> <strong>NvGsaResolution</strong></div>
+<div class="line"><em>#include &lt;NvGsa.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Structure containing display resolution data. </p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="project0struct_nv_gsa_resolution_16896414012d389b10745d968d239a861"></span>uint32_t <strong>width</strong></p>
+<blockquote>
+<div><p>Width of the screen in pixels. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_resolution_165ed3f60fe24c50e63fb7a4e0dba9783"></span>uint32_t <strong>height</strong></p>
+<blockquote>
+<div><p>Height of the screen in pixels. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_resolution_1be4eb12e117fb9edfb109b9f29c0f0fd"></span>float <strong>refreshRate</strong></p>
+<blockquote>
+<div><p>Monitor refresh rate in Hz. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="line-block" id="project0union_nv_gsa_value">
+<div class="line"><em>union</em> <strong>NvGsaValue</strong></div>
+<div class="line"><em>#include &lt;NvGsa.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Union of option values. </p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="project0union_nv_gsa_value_1a5af77a30da7fcb33ca5da8fc8afbd71"></span>int32_t <strong>asInt</strong></p>
+<blockquote>
+<div><p>int value </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0union_nv_gsa_value_1ff11e6729d3d62e20adeefbb073d4cda"></span>float <strong>asFloat</strong></p>
+<blockquote>
+<div><p>float value </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0union_nv_gsa_value_168c938a00b9ae301c850fe1c5bd10628"></span>const wchar_t * <strong>asEnum</strong></p>
+<blockquote>
+<div><p>string enum value </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0union_nv_gsa_value_19ff51e35cfcdd3c8b36b816eafdd213c"></span>bool <strong>asBool</strong></p>
+<blockquote>
+<div><p>bool value </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="line-block" id="project0struct_nv_gsa_variant">
+<div class="line"><em>struct</em> <strong>NvGsaVariant</strong></div>
+<div class="line"><em>#include &lt;NvGsa.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Structure for passing a dynamically typed option value. </p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="project0struct_nv_gsa_variant_120019e95cb49ac0016eb62568bcc6383"></span><a class="reference internal" href="#project0_nv_gsa_8h_1b6459740443806e6b87a4106ac75a347"><em>NvGsaDataType</em></a> <strong>type</strong></p>
+<blockquote>
+<div><p>type of the value field </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_variant_14be78377cc439887d3ce228aaaad10f7"></span>int32_t <strong>asInt</strong></p>
+<blockquote>
+<div><p>int value </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_variant_1504d92647d66c87f8a4c2b7dfa28c45c"></span>float <strong>asFloat</strong></p>
+<blockquote>
+<div><p>float value </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_variant_15661dfdeea9bd34aca8f4dd5b4d75900"></span>const wchar_t * <strong>asEnum</strong></p>
+<blockquote>
+<div><p>string enum value </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_variant_19e351dabc802515ec025e33638ceefbd"></span>bool <strong>asBool</strong></p>
+<blockquote>
+<div><p>bool value </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="line-block" id="project0struct_nv_gsa_version">
+<div class="line"><em>struct</em> <strong>NvGsaVersion</strong></div>
+<div class="line"><em>#include &lt;NvGsa.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>Contains the library version number. </p>
+<p></p>
+<em>Public Members</em><blockquote>
+<div><p><span class="target" id="project0struct_nv_gsa_version_168cef9cf831bfdab0446d2ce5a691a0c"></span>uint32_t <strong>major</strong></p>
+<blockquote>
+<div><p>Major version of the product, changed manually with every product release with a large new feature set. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_version_14b1930356dfd96e37ee3dce7671bc90f"></span>uint32_t <strong>minor</strong></p>
+<blockquote>
+<div><p>Minor version of the product, changed manually with every minor product release containing some features. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_version_14d3b23ee589b03c0e061c3633d92f3f4"></span>uint32_t <strong>revision</strong></p>
+<blockquote>
+<div><p>Revision, changed manually with every revision for bug fixes. </p>
+<p></p>
+</div></blockquote>
+<p><span class="target" id="project0struct_nv_gsa_version_1b82dbe93aafc441face660f68354757c"></span>uint32_t <strong>build</strong></p>
+<blockquote>
+<div><p>Build number of the same revision. Typically 0. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="line-block" id="project0_nv_gsa_8h">
+<div class="line"><em>file</em> <strong>NvGsa.h</strong></div>
+<div class="line"><em>#include &lt;NvFoundation.h&gt;</em></div>
+<div class="line"><em>#include &lt;stdbool.h&gt;</em></div>
+</div>
+<blockquote>
+<div><p>The GFE Settings API C/C++ header. </p>
+<p></p>
+<em>Defines</em><blockquote>
+<div><p><span class="target" id="project0_nv_gsa_8h_103b9a8d7f7ed2acd299b88a6be7c8b45"></span><strong>GFSDK_GSA_API</strong></p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Typedefs</em><blockquote>
+<div><p><span class="target" id="project0_nv_gsa_8h_11b88813a6a33daac1ddd7af68a7d9e6e"></span>typedef uint32_t <strong>NvGsaSaveFlags</strong></p>
+<blockquote>
+<div><p>Flags containing NvGsaSaveFlagValues bitflags. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+<em>Enums</em><blockquote>
+<div><p><span class="target" id="project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"></span><strong>NvGsaStatus enum</strong></p>
+<blockquote>
+<div><p>Status codes that may be returned by functions in the library. </p>
+<p></p>
+<p><em>Values:</em></p>
+<ul class="breatheenumvalues">
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_OK</span></tt><tt class="docutils literal"> <span class="pre">=</span> &nbsp; <span class="pre">0</span></tt> - <p>Success. Request is completed. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_ERROR</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-1</span></tt> - <p>Generic error. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_FILENOTFOUND</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-2</span></tt> - <p>The config file cannot be found in the specified path. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_SDK_VERSION_MISMATCH</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-3</span></tt> - <p>Mismatch of dll vs header file+lib. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_INVALID_ARGUMENT</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-4</span></tt> - <p>Invalid argument (such as a null pointer). </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_OPTION_NOT_FOUND</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-20</span></tt> - <p>The Named Option cannot be found. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_MULTIPLE_OPTIONS_FOUND</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-21</span></tt> - <p>Multiple optins with the same name found. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_OPTION_VALUE_OUTOFSTEP</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-22</span></tt> - <p>The data value provided doesn&#8217;t fit the step size. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_OPTION_VALUE_OUTOFRANGE</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-23</span></tt> - <p>The data value provided is outside the valid range. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_OPTION_FOUND</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-24</span></tt> - <p>The Named Option already exists. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_OPTION_VALUE_WRONG_TYPE</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-25</span></tt> - <p>The value destination structure has the wrong data type. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_DIRTY_OPTIONS_FOUND</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-30</span></tt> - <p>One or more options are dirty. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_SDK_NOT_INITIALIZED</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-100</span></tt> - <p>Trying to use without being initalized. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_STATUS_SDK_ALREADY_INITIALIZED</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">-101</span></tt> - <p>Trying to initialize more than once. </p>
+</li>
+</ul>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_1b6459740443806e6b87a4106ac75a347"></span><strong>NvGsaDataType enum</strong></p>
+<blockquote>
+<div><p>Type of data in an associated <a class="reference internal" href="#project0union_nv_gsa_value"><em>NvGsaValue</em></a>. </p>
+<p></p>
+<p><em>Values:</em></p>
+<ul class="breatheenumvalues">
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_TYPE_INT</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">0</span></tt> - <p>32-bit integer type </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_TYPE_FLOAT</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">1</span></tt> - <p>32-bit floating point type </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_TYPE_ENUM</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">2</span></tt> - <p>string enumeration type </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_TYPE_BOOL</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">3</span></tt> - <p>boolean type </p>
+</li>
+</ul>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_15e5fcc2b7ca3d188f512e31bf5bbeb9e"></span><strong>NvGsaSaveFlagValues enum</strong></p>
+<blockquote>
+<div><p>Flag values used by the GFSDK_GSA_SaveConfigFile function. </p>
+<p></p>
+<p><em>Values:</em></p>
+<ul class="breatheenumvalues">
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_SAVE_ALL</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">0</span></tt> - <p>Save all options, including those that have not been registered by the application. </p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">NV_GSA_SAVE_SKIP_UNREGISTERED</span></tt><tt class="docutils literal"> <span class="pre">=</span>  <span class="pre">1</span></tt> - <p>Skip saving unregistered options. </p>
+</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<em>Functions</em><blockquote>
+<div><p><span class="target" id="project0_nv_gsa_8h_13c77a44f55ffb6354f233614548d750d"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_InitializeSDK</strong>(const  <a class="reference internal" href="#project0struct_nv_gsa_application"><em>NvGsaApplication</em></a>  * appRegInfo, const  <a class="reference internal" href="#project0struct_nv_gsa_version"><em>NvGsaVersion</em></a>  * version)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Initializes the SDK. </p>
+<p><p>If the SDK has already been initialized, it will skip any work and return. If the SDK is not initialized, it will proceed with the initalization steps. First the supplied version will be checked against the dll internal version to avoid potential mismatchs and crashes due to incompatibility of dll&#8217;s and the version compiled in the application. Second the application data will be copied to the internal storage.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_INVALID_ARGUMENT if appRegInfo or version is null; NV_GSA_STATUS_SDK_ALREADY_INITIALIZED if the library has already been initialized; NV_GSA_STATUS_VERSION_MISMATCH if the application was compiled against an incompatible version of the library; NV_GSA_STATUS_OK if initialization succeeded </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">appRegInfo</span></tt> - <p>Pointer to an <a class="reference internal" href="#project0struct_nv_gsa_application"><em>NvGsaApplication</em></a> structure with information about the application initializing the library; should not be null</p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">version</span></tt> - <p>Pointer to an <a class="reference internal" href="#project0struct_nv_gsa_version"><em>NvGsaVersion</em></a> structure; the application should pass the address of the NvGsaCurrentVersion constant</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_1c6b7fa1d5c59c7f4fa2b1d145629753d"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_ReleaseSDK</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Releases the library and all resources allocated by the library. </p>
+<p><p>Data is not saved or preserved when calling this function. If there are configuration changes that need to be saved, GFSDK_GSA_SaveConfigFile should be called before calling this function.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_OK if the library has been fully released </dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_1ab607117594630b750852a6ca0014f0b"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_LoadConfigFile</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Loads the GSA config file specified during library initialization. </p>
+<p><p>Options should be registered by the application using GFSDK_GSA_RegisterOption before calling this function. Any options in the read from the configuration file that aren&#8217;t registered will be inaccessible to the application, and the GeForce Experience client will be responsible for cleaning up unregistered options from the file.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_FILENOTFOUND if unable to find the settings file; NV_GSA_STATUS_ERROR if the file was unable to be parsed; NV_GSA_STATUS_OK if the file was loaded and options were updated </dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_1607eacfddd07ec5d6cca80fe1c21d8f7"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_SaveConfigFile</strong>(<a class="reference internal" href="#project0_nv_gsa_8h_11b88813a6a33daac1ddd7af68a7d9e6e"><em>NvGsaSaveFlags</em></a> flags)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Saves registered option values to the GSA config file specified during library initialization. </p>
+<p><p>If the NV_GSA_SAVE_SKIP_UNREGISTERED flag is specified, only registered options will be saved to the GSA config file.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_ERROR if the file could not be saved; NV_GSA_STATUS_OK if the file was successfully saved </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">flags</span></tt> - <p>Set of NvGsaSaveFlagValues specifying how to save the file; should not be null</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_13679a0a352de6665e00f931b28ff7c01"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_RegisterOption</strong>(const  <a class="reference internal" href="#project0struct_nv_gsa_named_option"><em>NvGsaNamedOption</em></a>  * currentOption)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Registers an option used by the application. </p>
+<p><p>This function checks for duplicate options with the same name and type, but no verification of option bounds is performed. Duplicate options are skipped.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_ILLEGAL_ARGUMENT if currentOption is null; NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_OPTION_FOUND if the specified option is a duplicate; NV_GSA_STATUS_OK if the option was successfully registered </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">currentOption</span></tt> - <p>Pointer to the option to register; should not be null</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_1c6920bc7c87ddb6e1f7ecc7b4cb4a2f4"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_RegisterResolutions</strong>(const  <a class="reference internal" href="#project0struct_nv_gsa_resolution"><em>NvGsaResolution</em></a>  * availableResolutions, uint32_t numResolutions)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Registers resolutions available to the application. </p>
+<p><p>This function should only been used when the application wants to restrict the set of available resolutions.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_INVALID_ARGUMENT if availableResolutions is null; NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_OK if the available resolutions were successfully registered </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">availableResolutions</span></tt> - <p>Array of <a class="reference internal" href="#project0struct_nv_gsa_resolution"><em>NvGsaResolution</em></a> structures that enumerate the available resolutions; should not be null</p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">numResolutions</span></tt> - <p>Number of elements in the availableResolutions array</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_16fcb9e795f74b9a896139d65112c1027"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API void <strong>GFSDK_GSA_ReleaseVariant</strong>(<a class="reference internal" href="#project0struct_nv_gsa_variant"><em>NvGsaVariant</em></a>  * variant)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Releases memory used by a variant that was returned by the library. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">variant</span></tt> - <p>Variant to be released </p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_18b24e81419388f65b789ab1e4b765257"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_GetOptionValue</strong>(<a class="reference internal" href="#project0struct_nv_gsa_variant"><em>NvGsaVariant</em></a>  * value, const wchar_t * name)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Returns the current value of the specified registered option. </p>
+<p><p>The returned value should be freed using GFSDK_GSA_ReleaseVariant when it is no longer needed.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_INVALID_ARGUMENT if value or name is null; NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_OPTION_NOT_FOUND if a registered option with the specified name and type is not found; NV_GSA_STATUS_OK if option was found, and value returned </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">value</span></tt> - <p>Address of <a class="reference internal" href="#project0struct_nv_gsa_variant"><em>NvGsaVariant</em></a> that will be filled in with the value of the specified option; should not be null</p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">name</span></tt> - <p>Name of the option to retrieve; should not be null</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_193641c4c7e210e7030d1b65108414476"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_SetOptionValue</strong>(const  <a class="reference internal" href="#project0struct_nv_gsa_variant"><em>NvGsaVariant</em></a>  * value, const wchar_t * name)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Updates the current value of the specified registered option. </p>
+<p><p>The current option value will be overwritten by the new one. Verification is done to ensure that the value provided has the correct type and is in the within the allowed range of the registered option.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_INVALID_ARGUMENT if value or name is null; NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_OPTION_NOT_FOUND if a registered option with the specified name and type is not found; NV_GSA_STATUS_OPTION_VALUE_WRONG_TYPE if the registered option type does not match the specified option type; NV_GSA_VALUE_OUTOFRANGE if the value provided is outside the range specified at registration; NV_GSA_VALUE_OUTOFSTEP if the value provided does not match the step size specified at registration; NV_GSA_STATUS_OK if option was found, and value updated </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">value</span></tt> - <p>Pointer to new value of option; should not be null</p>
+</li>
+<li><tt class="first docutils literal"><span class="pre">name</span></tt> - <p>Name of the option to retrieve; should not be null</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_1a2312a230e1529f0aebfa08dde459a5e"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_GetResolution</strong>(<a class="reference internal" href="#project0struct_nv_gsa_resolution"><em>NvGsaResolution</em></a>  * value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Returns the current resolution setting. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_INVALID_ARGUMENT if value is null; NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_OK if the current resolution was retrieved successfully </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">value</span></tt> - <p>Address of <a class="reference internal" href="#project0struct_nv_gsa_resolution"><em>NvGsaResolution</em></a> structure to be filled with information about the current resolution; should not be null</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_1e0bac0ae2caa4979a702afe58d62a978"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_SetResolution</strong>(const  <a class="reference internal" href="#project0struct_nv_gsa_resolution"><em>NvGsaResolution</em></a>  * value)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Updates the current resolution value stored in the library. </p>
+<p><p>If a range of valid resolutions has been specified, the input value will be validated against the range.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_INVALID_ARGUMENT if value is null; NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_OPTION_VALUE_OUTOFRANGE if the specified resolution is not available; NV_GSA_STATUS_OK if the current resolution was updated </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">value</span></tt> - <p>Pointer to the new resolution; should not be null</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_1bced5a55f07ba78575d51bb20384a4b6"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0_nv_gsa_8h_1922d8b6b76e5bc3ce51779f33c172b5b"><em>NvGsaStatus</em></a> <strong>GFSDK_GSA_CheckForDirtyOptions</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Checks if there are options that have changed from the values in the configuration file. </p>
+<p><p>This function compares the application side registered options with their counterparts from the config file. If there are dirty options, it means that some values have changed and the config file might need updating. A use case of this function is to verify whether it is needed to re-save the config file or not when the user applys changes that are identical to the previous settings.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>NV_GSA_STATUS_SDK_NOT_INITIALIZED if the library has not been initialized with a call to GFSDK_GSA_InitializeSDK; NV_GSA_STATUS_DIRTY_OPTIONS_FOUND if one more options are dirty NV_GSA_STATUS_OK if there are no dirty options </dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+<p><span class="target" id="project0_nv_gsa_8h_1f6b4828ed8c510f4a9b2ae716965d9b8"></span><div class="line-block">
+<div class="line">GFSDK_GSA_API  <a class="reference internal" href="#project0struct_nv_gsa_version"><em>NvGsaVersion</em></a> <strong>GFSDK_GSA_GetVersion</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p>Returns the runtime SDK version of the library. </p>
+<p><p>Note that the version returned may be different from NvGsaCurrentVersion, if the library dll being used has a different version than the SDK that the application was compiled agains.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>the runtime SDK version of the library. </dd>
+</dl>
+</p>
+</p>
+</div></blockquote>
+</div></blockquote>
+<em>Variables</em><blockquote>
+<div><p><span class="target" id="project0_nv_gsa_8h_1e542294d0e62d8f1a3c8673d7b5cf0b4"></span>const  <a class="reference internal" href="#project0struct_nv_gsa_version"><em>NvGsaVersion</em></a> <strong>NvGsaCurrentVersion</strong></p>
+<blockquote>
+<div><p>Contains the current library version number. </p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+
+
+          </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<div class="masthead">
+    <div class="row">
+      <ul class="breadcrumb">
+        <li><a href="index.html">GFE Settings API 1.0.2 documentation</a></li>
+          <li><a href="product.html" >GFE Settings API 1.0.2</a></li> 
+      </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-boilerplate">
+        <div class="row">
+            <div class="boilerplate">
+                Copyright &copy; 2014, NVIDIA Corporation &nbsp; | &nbsp; <a href="http://www.nvidia.com/object/about-nvidia.html" onclick="s_objectID=&quot;http://www.nvidia.com/object/about-nvidia.html_1&quot;;return this.s_oc?this.s_oc(e):true">About NVIDIA </a>&nbsp; | &nbsp; <a href="http://www.nvidia.com/object/legal_info.html" onclick="s_objectID=&quot;http://www.nvidia.com/object/legal_info.html_1&quot;;return this.s_oc?this.s_oc(e):true">Legal Information </a>&nbsp; | &nbsp; <a href="http://www.nvidia.com/object/privacy_policy.html" onclick="s_objectID=&quot;http://www.nvidia.com/object/privacy_policy.html_1&quot;;return this.s_oc?this.s_oc(e):true">Privacy Policy </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<script>
+var treestatename = 'GWDocsTreeState';
+var protocol = location.href.split('/')[0].toLowerCase();
+var storage;
+if (protocol.substring(0,4) == 'http') {
+  storage = $.cookieStorage;
+  storage.setPath('/');
+} else {
+  storage = $.localStorage;
+}
+
+if (storage.isEmpty(treestatename)) {
+  storage.set(treestatename, {});
+}
+
+var treestate = storage.get(treestatename);
+
+$.each($("#sidebar_toc ul li"), toc_walker);
+
+function toc_walker(key, value) {
+    var handleSpan = $("<span></span>")
+        .addClass("toc_handle").prependTo(value);
+    handleSpan.attr("id", $(value).closest("div").attr("id") + "." + key);
+
+    if($(value).has("ul li").size() > 0) {
+        var id = handleSpan.attr("id");
+        if (!(id in treestate)) {
+          treestate[id] = false;
+        }
+        handleSpan.addClass("toc_expanded").click(function() {
+            $(this).toggleClass("toc_expanded toc_collapsed").siblings("ul").toggle();
+            treestate[$(this).attr('id')] = $(this).hasClass('toc_expanded');
+            storage.set(treestatename, treestate);
+        });
+        if(!($(this).hasClass('current') || treestate[id])) {
+            handleSpan.click();
+        }
+        if($(this).hasClass('current')) {
+            treestate[handleSpan.attr('id')] = handleSpan.hasClass('toc_expanded');
+            storage.set(treestatename, treestate);
+        }
+    }
+}
+</script>
+  </body>
+</html>

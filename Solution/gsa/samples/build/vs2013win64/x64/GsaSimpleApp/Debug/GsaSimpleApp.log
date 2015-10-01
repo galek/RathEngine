@@ -1,0 +1,35 @@
+﻿Build started 22.07.2015 03:19:15.
+     1>Project "C:\Users\Rathian\Desktop\RathEngine\Solution\gsa\samples\build\vs2013win64\GsaSimpleApp.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I./../../../include /I./../../../include/stdbool /Zi /nologo /W4 /WX /Od /Oi /D WIN64 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D _DEBUG /Gm- /EHsc /MD /GS /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"./x64/GsaSimpleApp/Debug\\" /Fd"./x64/GsaSimpleApp/Debug\vc140.pdb" /Gd /TC /errorReport:prompt /wd4201 /Oy- /Gm- /EHsc ..\..\GsaSimpleApp\GsaSimpleApp.c
+         GsaSimpleApp.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"./../../GsaSimpleApp/bin/win64\GsaSimpleAppD.x64.exe" /NOLOGO /LIBPATH:./../../../lib/win64 NvGsaD.x64.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"./../../GsaSimpleApp/bin/win64\/GsaSimpleAppD.x64.exe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"./../../GsaSimpleApp/bin/win64\GsaSimpleAppD.x64.lib" /MACHINE:X64 /DEBUG /MACHINE:x64 /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO ./x64/GsaSimpleApp/Debug\GsaSimpleApp.obj
+         GsaSimpleApp.vcxproj -> C:\Users\Rathian\Desktop\RathEngine\Solution\gsa\samples\build\vs2013win64\./../../GsaSimpleApp/bin/win64\GsaSimpleAppD.x64.exe
+       PostBuildEvent:
+         (robocopy C:\Users\Rathian\Desktop\RathEngine\Solution\gsa\samples\build\vs2013win64\..\..\..\bin\win64 C:\Users\Rathian\Desktop\RathEngine\Solution\gsa\samples\GsaSimpleApp\bin\win64\ *.dll *.dll.pdb) ^& if %ERRORLEVEL% leq 1 exit 0
+         :VCEnd
+         
+         -------------------------------------------------------------------------------
+            ROBOCOPY     ::     Robustes Dateikopieren für Windows                              
+         -------------------------------------------------------------------------------
+         
+           Gestartet: Mittwoch, 22. Juli 2015 03:19:16
+            Quelle : C:\Users\Rathian\Desktop\RathEngine\Solution\gsa\bin\win64\
+              Ziel : C:\Users\Rathian\Desktop\RathEngine\Solution\gsa\samples\GsaSimpleApp\bin\win64\
+         
+             Dateien : *.dll
+         	    *.dll.pdb
+         	    
+           Optionen: /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+         
+         ------------------------------------------------------------------------------
+         
+         2015/07/22 03:19:16 FEHLER 3 (0x00000003) Zugriff auf Quellverzeichnis C:\Users\Rathian\Desktop\RathEngine\Solution\gsa\bin\win64\
+         Das System kann den angegebenen Pfad nicht finden.
+         
+     1>Done Building Project "C:\Users\Rathian\Desktop\RathEngine\Solution\gsa\samples\build\vs2013win64\GsaSimpleApp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.48

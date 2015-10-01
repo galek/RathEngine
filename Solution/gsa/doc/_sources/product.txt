@@ -1,0 +1,15 @@
+|PRODUCTNAME| |VERSION|
+======================================
+
+Highlights
+##############
+
+The GFE Settings API (GSA) provides developers with a simple mechanism for registering applications with GeForce Experience (GFE). Registered applications can communicate with GFE via a simple API that persists settings to a file that is shared between the registered application and GFE.
+
+Browse Documentation
+#####################
+.. toctree::
+   :maxdepth: 1
+
+   api
+   releasenotes

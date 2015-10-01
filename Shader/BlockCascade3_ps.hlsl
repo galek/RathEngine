@@ -1,0 +1,12 @@
+#define SHADOWMAPPING 1
+#define USE_DERIVATIVES_FOR_DEPTH_OFFSET_FLAG 1
+#define BLEND_BETWEEN_CASCADE_LAYERS_FLAG 1
+#define SELECT_CASCADE_BY_INTERVAL_FLAG 0
+#define CASCADE_COUNT_FLAG 3
+
+#include "BlockPS.hlsli"
+
+float4 main(PS_INPUT input) : SV_TARGET
+{
+	return PS(input);
+}

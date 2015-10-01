@@ -1,0 +1,66 @@
+
+#define CHUNKCOUNT			256
+#define MAPSIZE				65536
+
+#define LOADED				1
+#define TOBEUNLOADED		2
+#define CHANGED				4
+
+
+/* FACING */
+#define FACEUP			0x01
+#define FACEDOWN		0x02
+#define FACEFRONT		0x04
+#define FACEBACK		0x08
+#define FACELEFT		0x10
+#define FACERIGHT		0x20
+
+#define FACEALL			0x3F
+
+#define POSITIONUP		0x0100
+#define POSITIONDOWN	0x0200
+#define POSITIONFRONT	0x0400
+#define POSITIONBACK	0x0800
+#define POSITIONLEFT	0x1000
+#define POSITIONRIGHT	0x2000
+
+#define POSITIONALL		0x3F00
+
+#define PLACEUP			0x010000
+#define PLACEDOWN		0x020000
+#define PLACEFRONT		0x040000
+#define PLACEBACK		0x080000
+#define PLACELEFT		0x100000
+#define PLACERIGHT		0x200000
+
+#define PLACEALL		0x3F0000
+/* FACING */
+
+/* STATUS */
+#define AKTIV		0x04
+#define INVERSE		0x08
+/* STATUS */
+
+/* UPDATES */
+#define NO_UPDATE				0x00
+#define	BLOCK_UPDATE			0x01
+#define STRONG_REDSTONEUPDATE	0x02
+#define GEOMETRY_UPDATE			0x04
+#define GROWTH_UPDATE			0x08
+#define DRYING_UPDATE			0x10
+#define RANDOM_UPDATE			0x20
+
+#define BLOCK_PLACED			0x81
+#define BLOCK_REMOVED			0x40
+/* UPDATES */
+
+/* SET BLOCK DEFINES */
+#define UPDATE_NONE			0x00
+#define UPDATE_LIGHT		0x01
+#define UPDATE_GEOMETRY		0x02
+#define UPDATE_IMMEDIATLY	0x04
+#define UPDATE_ALL			0x0F	
+#define UPDATE_DELAY		0x10
+#define UPDATE_IF_AIR		0x20
+#define UPDATE_IFN_AIR		0x40
+/* SET BLOCK DEFINES */

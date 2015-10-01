@@ -1,0 +1,9 @@
+API Documentation
+=======================================
+
+|PRODUCTNAMEBOLD| |VERSIONBOLD|
+
+.. doxygenindex::
+
+.. toctree::
+   :maxdepth: 1

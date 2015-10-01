@@ -1,0 +1,44 @@
+Release Notes
+=======================================
+
+|PRODUCTNAMEDOCRELEASEBOLD|
+
+First release of the GFE Settings API (GSA) as a GameWorks product.
+
+What's New
+-----------------------
+
+* Thread safety - All GSA functions are now thread safe, and may be called from any thread.
+
+Fixes and Enhancements
+-----------------------
+
+**General**
+
+None
+
+|VERSIONBOLD|
+
+* Fixed a crash in GFSDK_GSA_CheckForDirtyOptions.
+
+**1.0.1**
+
+* Fixes for memory leaks and double deletes crashes due to dangling pointers.
+* Option step validation - GFSDK_GSA_SetOptionValue now validates values against step ranges specified by GFSDK_GSA_RegisterOption
+
+Known Issues
+-----------------------
+
+**General**
+
+None
+
+|VERSIONBOLD|
+
+None
+
+.. _Forums: http://devtalk.nvidia.com
+.. _Report a bug: http://developer.nvidia.com/contact
+
+.. toctree::
+   :maxdepth: 1
